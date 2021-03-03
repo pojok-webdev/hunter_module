@@ -1,0 +1,39 @@
+2021-02-04
+Penambahan layanan SOHO
+-Add FB
+-Edit FB
+
+2020-10-28
+Troubleshootfus untuk halaman Followup Troubleshoot, menggantikan popup
+
+2020-10-27
+MySQL Too Many Connection: Solution: restart server
+Amount Differ between tickets and top 5 (Top 5>tickets with the same time range filter)??:jawaban faktor date(create_date)vs create_date
+Menambahkan non pelanggan pada Laporan Top 5 Root Cause
+
+
+Kodifikasi Pelanggan
+status 0 , active 0 : suspect
+status 1 , active 0: prospect
+statu 1,active 1: install
+
+
+datamapper existing:
+
+survey
+
+
+
+
+instalasi: 5 instal belum selesai
+
+
+
+ticket² yang mempunyai fu:
+select * from (select a.kdticket,count(b.id)cnt from tickets a left outer join ticket_followups b on b.ticket_id=a.id group
+by a.kdticket)X where cnt>1;
+
+
+
+superscriipts : ¹²³⁴⁵⁶⁷⁸⁹⁰
+subscriipts : ₀₁₂₃₄₅₆₇₈₉

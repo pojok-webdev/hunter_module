@@ -1,0 +1,8 @@
+js/aquarius/links.js
+application/config/database.php
+application/config/config.php
+media/
+documents/
+img/
+/nbproject/private/
+nbproject/
