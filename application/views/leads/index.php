@@ -351,7 +351,18 @@
                                     <td>101</td>
                                     <td>Dmitry</td>
                                     <td>dmitry@domain.com</td>
-                                    <td>+98(765)432-10-98</td>                                    
+                                    <td>                                    
+                                        <div class="btn-group">                                        
+                                        <button data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><input type="checkbox" name="checkbox"/></td>
