@@ -8,6 +8,8 @@
     }
     .listUsers thead th{
         text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
     }
     </style>
     <div class="header">
@@ -24,7 +26,7 @@
             <div class="span12">                    
                     <div class="head clearfix">
                         <div class="isw-users"></div>
-                        <h1>Simple users list</h1>      
+                        <h1>Status Pelanggan</h1>      
                     </div>
                     <div class="block-fluid">
                         <table cellpadding="0" cellspacing="0" width="100%" class="table listUsers">

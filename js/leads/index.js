@@ -54,7 +54,7 @@
 
                 str+='<div class="btn-group">';
                 str+='<button data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></button>';
-                str+='<ul class="dropdown-menu">';
+                str+='<ul class="dropdown-menu pull-right">';
                 str+='<li><a href="#">Ajukan Penawaran</a></li>';
                 str+='<li><a href="#">Edit</a></li>';
                 str+='<li class="divider"></li>';
