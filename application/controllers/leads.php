@@ -10,6 +10,7 @@ class Leads extends CI_Controller {
 			'breadcrumb'=>array(array("url"=>"/","text"=>"Leads"),array("url"=>"/","text"=>"Table")),
 			'objs'=>$this->lead->getsuspects(),
 			'rowAmounts'=>array('5'=>'5','10'=>'10','15'=>'15','20'=>'20','25'=>'25'),
+			'users'=>$this->user->getFakeUsers()
 		);
 		$this->load->view('leads/index',$data);
 	}

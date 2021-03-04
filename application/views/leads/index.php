@@ -2,9 +2,8 @@
 <html lang="en">
 <?php $this->load->view('commons/head');?>
 <body>
-    
     <div class="header">
-        <a class="logo" href="/"><img src="/img/aquarius/logo.png" alt="" title="Aquarius -  responsive admin panel"/></a>
+        <a class="logo" href="/"><img src="/img/aquarius/logo.png" alt="" title="PadiApp-Hunter"/></a>
         <ul class="header_menu">
             <li class="list_icon"><a href="#">&nbsp;</a></li>
         </ul>    
@@ -21,14 +20,6 @@
                         <ul class="buttons">
                             <li><a href="#" class="isw-download"></a></li>
                             <li><a href="#" class="isw-attachment"></a></li>
-                            <li>
-                                <a href="#" class="isw-settings"></a>
-                                <ul class="dd-list">
-                                    <li><a href="#"><span class="isw-plus"></span> New document</a></li>
-                                    <li><a href="#"><span class="isw-edit"></span> Edit</a></li>
-                                    <li><a href="#"><span class="isw-delete"></span> Delete</a></li>
-                                </ul>
-                            </li>
                         </ul>                        
                     </div>
                     <div class="block-fluid table-sorting clearfix">
@@ -46,9 +37,6 @@
                             </tbody>
                         </table>
                     </div>
-
-
-
                     <div class="dataTables_info" id="tLead_info"></div>
                         <input type="text" placeholder="Search by name" id="searchbar">
                         <button class="btn" id="searchbutton">Search</button>
@@ -65,7 +53,6 @@
                             <?php echo form_dropdown('pageoption',array(),'1','id="pageoption" class="pageoption" ');?>
                         </div>
                 </div>
-
                 </div>                                
             </div>            
             <div class="dr"><span></span></div>            

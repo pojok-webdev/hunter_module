@@ -17,6 +17,4 @@
 	$autoload['helper'] = array('array','url','form','date','file','directory','text','cookie','download');
 	$autoload['config'] = array();
 	$autoload['language'] = array();
-	$autoload['model'] = array(array(
-	)
-);
+	$autoload['model'] = array(array('user'));

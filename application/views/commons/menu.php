@@ -21,7 +21,7 @@
     </div>
     <ul class="navigation">            
         <li>
-            <a href="/">
+            <a href="/dashboards">
                 <span class="isw-grid"></span><span class="text">Dashboard</span>
             </a>
         </li>
