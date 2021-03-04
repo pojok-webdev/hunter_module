@@ -1,29 +1,30 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Leads extends CI_Controller {
-
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -  
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in 
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
+	function __construct(){
+		parent::__construct();
+		$this->load->model('lead');
+	}
 	public function index(){
 		$data = array(
-			'breadcrumb'=>array(array("url"=>"/","text"=>"Leads"),array("url"=>"/","text"=>"Table"))
+			'breadcrumb'=>array(array("url"=>"/","text"=>"Leads"),array("url"=>"/","text"=>"Table")),
+			'objs'=>$this->lead->getsuspects(),
+			'rowAmounts'=>array('5'=>'5','10'=>'10','15'=>'15','20'=>'20','25'=>'25'),
 		);
 		$this->load->view('leads/index',$data);
 	}
-}
+	function getamount(){
+        echo json_encode($this->lead->getAmount());
+    }
+    function ajaxsource(){
+        $params = $this->input->post();
+        $objs = $this->lead->gets($params['segment'],$params['offset']);
+        $arr = array();
+        echo json_encode($objs['res']);
+    }
+    function lastpage(){
+        $lastpage = $this->lead->getPageAmount();
+        echo '{"lastpage":'.$lastpage.'}';
+    }
 
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+}
