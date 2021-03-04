@@ -164,6 +164,8 @@
         </div>
         
     </div>   
-    
+    <script>
+    console.log('Slider_1',$('#slider_1').val());
+    </script>
 </body>
 </html>
